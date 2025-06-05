@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-    profuilePic: {
+    image: {
         type: String,
     },
     username: {
@@ -28,6 +28,7 @@ const userSchema = new mongoose.Schema({
     },
     isBlocked: {
         type: Boolean,
+        default: false
     },
     joindClass: [
         {
@@ -40,8 +41,7 @@ const userSchema = new mongoose.Schema({
         startDate: Date,
         endDate: Date,
         plan: { type: String, enum: ['monthly', 'yearly', 'lifetime'], default: 'monthly' }
-    },
-    status: { type: String, enum: ['active', 'suspended', 'deleted'], default: 'active' }
+    }
 }, { timestamps: true });
 
 const User = mongoose.model('User', userSchema);

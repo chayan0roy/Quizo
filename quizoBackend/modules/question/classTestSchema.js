@@ -6,6 +6,11 @@ const classTestSchema = new mongoose.Schema({
         ref: 'Class',
         required: true
     },
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+    },
     testName: {
         type: String,
         required: true
