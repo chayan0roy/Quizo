@@ -8,12 +8,16 @@ const db = require('./config/db');
 require('./middleware/passport-config')
 
 const userRoutes = require('./routes/userRoutes');
+const classRoutes = require('./routes/classRoutes');
+
 
 dotenv.config();
 
 app.use(express.json());
 app.use(passport.initialize());
+
 app.use('/user', userRoutes);
+app.use('/class', classRoutes);
 
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
