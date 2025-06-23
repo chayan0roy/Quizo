@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 
 const classSchema = new mongoose.Schema({
@@ -11,10 +12,6 @@ const classSchema = new mongoose.Schema({
     className: {
         type: String,
         required: true,
-<<<<<<< HEAD
-        unique: true
-=======
->>>>>>> fffc95f (Nodemailer Updated)
     },
     classDescription: {
         type: String,
