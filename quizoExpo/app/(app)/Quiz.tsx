@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, Button, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const { height, width } = Dimensions.get('window');
 
@@ -22,7 +22,7 @@ const questions = [
   },
 ];
 
-const QuizScreen = () => {
+const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(60); // Timer starts at 60 seconds
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -177,4 +177,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default QuizScreen;
+export default Quiz;

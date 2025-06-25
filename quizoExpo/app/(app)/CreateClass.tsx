@@ -5,18 +5,18 @@ import axios from 'axios';
 import * as ImagePicker from 'expo-image-picker';
 import React, { useEffect, useState } from 'react';
 import {
-    Alert,
-    Image,
-    Platform,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View
+  Alert,
+  Image,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View
 } from 'react-native';
 
-const CreateBatch = () => {
+const CreateClass = () => {
   const [classLogo, setClassLogo] = useState(null);
   const [classTopic, setClassTopic] = useState('');
   const [className, setClassName] = useState('');
@@ -361,4 +361,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CreateBatch;
+export default CreateClass;

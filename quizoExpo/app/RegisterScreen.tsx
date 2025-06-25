@@ -43,7 +43,7 @@ const RegisterScreen = () => {
 
       if (response.status === 201 || response.status === 200) {
         Alert.alert('Success', 'Registration successful!');
-                await AsyncStorage.setItem('token', response.data.auth_token);
+        await AsyncStorage.setItem('token', response.data.auth_token);
 
       } else {
         Alert.alert('Failed', 'Unexpected error occurred');

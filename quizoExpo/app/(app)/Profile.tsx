@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Image, TextInput, Alert, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';  // Importing FontAwesome icons
+import { Alert, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome'; // Importing FontAwesome icons
 
-const ProfileScreen = () => {
+const Profile = () => {
   const [userData, setUserData] = useState({
     name: 'John Doe',
     email: 'john.doe@example.com',
@@ -137,4 +137,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen;
+export default Profile;

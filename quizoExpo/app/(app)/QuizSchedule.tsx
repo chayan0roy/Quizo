@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Dimensions } from 'react-native';
+import { Dimensions, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const { width } = Dimensions.get('window');
 
@@ -23,7 +23,7 @@ const schedules = [
   { title: 'Final Faceoff', date: '2025-07-25', time: '04:00 PM' },
 ];
 
-const QuizScheduleScreen = () => {
+const QuizSchedule = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>📅 Weekly Quiz Schedule</Text>
@@ -93,4 +93,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default QuizScheduleScreen;
+export default QuizSchedule;
