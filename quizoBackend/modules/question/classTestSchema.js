@@ -15,10 +15,35 @@ const classTestSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    questions: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Quiz',
+    subjectName: {
+        type: String,
+        required: true
     },
+    selectedQuestions: [
+        {
+            topicName: {
+                type: String,
+                required: true
+            },
+            questions: [
+                {
+                    questionText: {
+                        type: String,
+                        required: true
+                    },
+                    options: [String],
+                    correctAnswer: {
+                        type: String,
+                        required: true
+                    },
+                    marks: {
+                        type: Number,
+                        default: 1
+                    }
+                }
+            ]
+        }
+    ],
     testDescription: {
         type: String,
         required: true
@@ -26,10 +51,6 @@ const classTestSchema = new mongoose.Schema({
     totalPoints: {
         type: Number,
         default: 0
-    },
-    timeLimit: {
-        type: Number,
-        default: 30
     },
     testDate: {
         type: Date,
@@ -46,7 +67,7 @@ const classTestSchema = new mongoose.Schema({
     endTime: {
         type: Date,
         required: true
-    },
+    }
 }, { timestamps: true });
 
 const ClassTest = mongoose.model('ClassTest', classTestSchema);
