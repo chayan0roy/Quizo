@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
-    joindClass: [
+    joinedClass: [
         {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Class'

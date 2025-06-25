@@ -16,10 +16,7 @@
     "express": "^5.1.0",
     "mongoose": "^8.15.1",
     "multer": "^2.0.1",
-<<<<<<< HEAD
-=======
     "nodemailer": "^7.0.3",
->>>>>>> fffc95f (Nodemailer Updated)
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1"
   }

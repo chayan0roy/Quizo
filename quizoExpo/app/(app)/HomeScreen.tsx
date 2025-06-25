@@ -7,24 +7,27 @@ const HomeScreen = () => {
 	const router = useRouter();
 
 	return (
-		<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', gap: 50 }}>
-			<TouchableOpacity onPress={() => router.push('/ClassList')}>
-				<Text style={{ color: '#1E90FF', textAlign: 'center' }}>
+		<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', gap: 50, backgroundColor: '#5139ff' }}>
+			<TouchableOpacity onPress={() => router.push('/ClassList')} style={{ bacgkgroundColor: '#fff', padding: 10, borderRadius: 5 }}>
+				<Text style={{ color: '#fff', textAlign: 'center' }}>
 					ClassList
 				</Text>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => router.push('/CreateBatch')}>
-				<Text style={{ color: '#1E90FF', textAlign: 'center' }}>
+			<TouchableOpacity onPress={() => router.push('/CreateBatch')}  style={{ bacgkgroundColor: '#fff', padding: 10, borderRadius: 5 }}>
+				<Text style={{ color: '#fff', textAlign: 'center' }}>
+
 					CreateBatch
 				</Text>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => router.push('/SelectQuestions')}>
-				<Text style={{ color: '#1E90FF', textAlign: 'center' }}>
+			<TouchableOpacity onPress={() => router.push('/SelectQuestions')}  style={{ bacgkgroundColor: '#fff', padding: 10, borderRadius: 5 }}>
+				<Text style={{ color: '#fff', textAlign: 'center' }}>
+
 					SelectQuestions
 				</Text>
 			</TouchableOpacity>
-			<TouchableOpacity onPress={() => router.push('/Leaderboard')}>
-				<Text style={{ color: '#1E90FF', textAlign: 'center' }}>
+			<TouchableOpacity onPress={() => router.push('/Leaderboard')}  style={{ bacgkgroundColor: '#fff', padding: 10, borderRadius: 5 }}>
+				<Text style={{ color: '#fff', textAlign: 'center' }}>
+
 					Leaderboard
 				</Text>
 			</TouchableOpacity>
